@@ -1,0 +1,64 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import { MoveDown } from "lucide-astro";
+---
+
+<Layout title="Alexander Hyman">
+  <Navbar />
+  <div class="mt-[30vh] p-2 min-h-screen overflow-auto">
+    <div
+      class="absolute bottom-6 text-center left-0 right-0 mx-auto w-[140px] justify-center"
+    >
+      <a href="#about">
+        <div
+          class="flex p-2 border rounded-xl gap-2 font-semibold hover:scale-110 transition-all cursor-pointer"
+        >
+          <MoveDown class="w-5" /> Learn More
+        </div>
+      </a>
+    </div>
+    <div class="flex flex-col p-3">
+      <h1 class="text-5xl font-semibold">Hello!</h1>
+      <p class="text-2xl mt-3 font-medium">
+        I'm Alexander, and I am a Canadian Typescript Developer and Designer,
+        based out of Oceanside, California.
+      </p>
+    </div>
+  </div>
+  <div class="flex flex-col min-h-screen justify-center p-3" id="about">
+    <h1 class="text-4xl font-semibold text-left">About</h1>
+    <p class="text-xl mt-6 font-medium">
+      Hiya! Nice to meet you, and thanks for checking out my portfolio! Here's a
+      little about me: I'm Alexander as you may know. I'm a full-stack <i
+        >(I don't even know if I can say that haha)</i
+      > developer with a preferred preference for backend development. I'm a
+      relative simple person, I got into coding around the age of 16! My first
+      ever Discord.JS bot, yikes that was a disaster. A few fun facts about me
+      is, I love to read <i>(I'm currently reading Warrior Cats!)</i> and I'm a <s
+        >furry</s
+      > but pretend you never heard that ;)
+    </p>
+    <br />
+    <br />
+    <p class="text-xl mt-3 font-medium">
+      I've worked in a variety of places! Some notable ones would be, <b
+        >TruckyMods</b
+      >, <b>Relatio</b> and, <b>Omero Systems</b> and that just scratches the
+      surface. If you want to take a look at a project of mines, why not check
+      out <span class="font-bold underline underline-offset-1"
+        ><a href="https://github.com/lavenderfoxxo/fluff">Fluff</a></span
+      >? It's a furry discord bot that has been on and off development wise,
+      however I'm very proud of it!
+    </p>
+    <br />
+    <br />
+    <p class="text-xl mt-5 font-medium">
+      Besides that, you can usually catch me hanging around my friends, <b
+        ><a href="https://marino.codes">Marino</a></b
+      >, <b><a href="https://jackmerrill.com">Jack</a></b>, <b
+        ><a href="https://ethn.sh">Ethan</a></b
+      > or <b>Mathis</b>.
+    </p>
+  </div>
+</Layout>
