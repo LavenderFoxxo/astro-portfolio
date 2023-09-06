@@ -12,7 +12,7 @@ import { MoveDown } from "lucide-astro";
     >
       <a href="#about">
         <div
-          class="flex p-2 border rounded-xl gap-2 font-semibold hover:scale-110 transition-all cursor-pointer"
+          class="flex p-2 border rounded-xl gap-2 font-semibold hover:scale-110 transition-all cursor-pointer animate-pulse"
         >
           <MoveDown class="w-5" /> Learn More
         </div>
@@ -26,7 +26,10 @@ import { MoveDown } from "lucide-astro";
       </p>
     </div>
   </div>
-  <div class="flex flex-col min-h-screen justify-center p-3" id="about">
+  <div
+    class="flex flex-col min-h-screen justify-center p-3 text-white text-opacity-80"
+    id="about"
+  >
     <h1 class="text-4xl font-semibold text-left">About</h1>
     <p class="text-xl mt-6 font-medium">
       Hiya! Nice to meet you, and thanks for checking out my portfolio! Here's a
@@ -58,7 +61,68 @@ import { MoveDown } from "lucide-astro";
         ><a href="https://marino.codes">Marino</a></b
       >, <b><a href="https://jackmerrill.com">Jack</a></b>, <b
         ><a href="https://ethn.sh">Ethan</a></b
-      > or <b>Mathis</b>.
+      > or <b>Mathis</b>. If not with them, you'll probably find me lost in the
+      rabbit hole of TikTok, quite addicting one might say.
     </p>
+  </div>
+  <div
+    class="flex flex-col min-h-screen w-full justify-center p-3 text-white text-opacity-80"
+    id="projects"
+  >
+    <h1 class="text-4xl font-semibold text-left">Projects</h1>
+    <p class="text-xl mt-3 font-medium">
+      Interested in what I've done and what I'm currently up to? Well, you can
+      find out below!
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 mt-6 gap-4 w-full">
+      <a
+        href="https://relatio.cc"
+        class="w-full rounded-lg hover:scale-105 cursor-pointer transition-all border border-white/60 backdrop-blur-md p-3 py-3"
+      >
+        <p class="font-bold">Relatio</p>
+        <p>Typescript Engineer</p>
+        <p class="opacity-80">December 2022 - Present</p>
+      </a>
+      <a
+        href="https://unnamed.engineering"
+        class="w-full rounded-lg hover:scale-105 cursor-pointer transition-all border border-white/60 backdrop-blur-md p-3 py-3"
+      >
+        <p class="font-bold">Unnamed Engineering</p>
+        <p>Developer & Designer</p>
+        <p class="opacity-80">August 2023 - Present</p>
+      </a>
+      <a
+        href="https://fsphotos.cc"
+        class="w-full rounded-lg hover:scale-105 cursor-pointer transition-all border border-white/60 backdrop-blur-md p-3 py-3"
+      >
+        <p class="font-bold">FSPhotos</p>
+        <p>Developer & Designer</p>
+        <p class="opacity-80">February 2023 - Present</p>
+      </a>
+      <a
+        href="https://pulse.byambo.com"
+        class="w-full rounded-lg hover:scale-105 cursor-pointer transition-all border border-white/60 backdrop-blur-md p-3 py-3"
+      >
+        <p class="font-bold">Pulse Music Bot</p>
+        <p>Lead Developer</p>
+        <p class="opacity-80">January 2023 - June 2023</p>
+      </a>
+      <a
+        href="https://omerobot.co.uk"
+        class="w-full rounded-lg hover:scale-105 cursor-pointer transition-all border border-white/60 backdrop-blur-md p-3 py-3"
+      >
+        <p class="font-bold">Omero Systems Ltd</p>
+        <p>Chief Technology Officer</p>
+        <p class="opacity-80">April 2023 - July 2023</p>
+      </a>
+      <a
+        href="https://truckymods.io"
+        class="w-full rounded-lg hover:scale-105 cursor-pointer transition-all border border-white/60 backdrop-blur-md p-3 py-3"
+      >
+        <p class="font-bold">TruckyMods</p>
+        <p>Laravel Developer</p>
+        <p class="opacity-80">January 2023 - March 2023</p>
+      </a>
+    </div>
   </div>
 </Layout>
