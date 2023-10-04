@@ -8,6 +8,6 @@ export default defineConfig({
     '/github': 'https://github.com/LavenderFoxxo'
   },
   server: {
-    port: process.env.PORT || 4321
+    port: parseInt(process.env.PORT) || 4321
   }
 });
