@@ -6,5 +6,8 @@ export default defineConfig({
   redirects: {
     '/twitter': 'https://x.com/alexanderhy04',
     '/github': 'https://github.com/LavenderFoxxo'
+  },
+  server: {
+    port: process.env.PORT || 4321
   }
 });
